@@ -1,0 +1,51 @@
+<html t:type="layout" title="blogestry-tp Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+<div class="col-md-9">
+    <div class="block">
+        <div class="article-inner">
+            <a href="#">
+                <img  src="${context:images/salt-lake.jpg}" class="article-banner" />
+            </a>
+        </div>
+        <div class="article-entry" t:type="loop" source="listaArticulos" value="articulo">
+            <a class="article-title" href="post/${articulo.id}">${articulo.titulo}</a>
+            <div class="article-meta">
+                <div><i class="fa fa-calendar">&nbsp;<t:output format="literal:dd-mm-yyyy" value="articulo.fecha"/></i></div>
+                <div><i class="fa fa-folder">&nbsp;${articulo.categoria}</i></div>
+                <div>
+                    <a href="post/${articulo.id}#disqus_thread"></a>
+                </div>
+                <t:security.authenticated>
+                    <div>
+                        <a t:type="pageLink" page="admin/index" context="articulo.id">
+                            <i class="fa fa-pencil" aria-hidden="true">&nbsp;Editar</i>
+                        </a>
+                    </div>
+                </t:security.authenticated>
+            </div>
+            <div>&nbsp;</div>
+            <div class="article-overview">
+                ${articulo.resumen}
+            </div>
+            <hr/>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li>
+                    <a t:type="eventLink" event="anterior">&laquo;</a>
+                </li>
+                <li class="${pagina.clase}" t:type="loop" source="paginas" value="pagina">
+                    <a t:type="eventLink" event="get" context="${pagina.numero}">${pagina.numero}</a>
+                </li>
+                <li>
+                    <a t:type="eventLink" event="siguiente">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script id="dsq-count-scr" src="//ascariromo.disqus.com/count.js" async="async"></script>
+</html>

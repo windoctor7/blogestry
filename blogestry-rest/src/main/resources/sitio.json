@@ -1,0 +1,12 @@
+{
+  "_class" : "io.github.windoctor7.api.entidades.Sitio",
+  "nombre":"Desarrollo Ágil con Java",
+  "autor":"Ascari Romo",
+  "github":"https://github.com/windoctor7",
+  "twitter":"https://twitter.com/windoctor",
+  "youtube":"https://www.youtube.com/channel/UC10dDu13Dkh7YrOvHv9VxdQ",
+  "disqus":"ascariromo",
+  "perfil":"Java Web Developer",
+  "ubicacion":"Ciudad de Mexico",
+  "articulosXPagina":5
+}

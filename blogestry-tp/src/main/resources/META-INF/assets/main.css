@@ -1,0 +1,264 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #f5f8f9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a:hover{
+    color: #38b7ea;
+}
+
+
+footer {
+    margin: 50px 0;
+}
+
+.container.custom-container {
+    width: 100%;
+}
+
+.block{
+    margin-top: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.block-form{
+    background-color: #ffffff;
+    padding: 20px;
+}
+.col-md-2{
+    padding-left: 0;
+}
+.profile-block {
+    padding: 15px 15px;
+    border-bottom: 1px solid #eceff2;
+}
+
+.article-inner {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#avatar{
+    display: block;
+    margin: 20px auto 20px;
+    width: 128px;
+    height: 128px;
+}
+
+#name,
+#title,
+#location {
+    display: block;
+    text-align: center;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#title{
+    font-size: 14px;
+}
+
+
+#location {
+    font-size: 12px;
+    color: #9a9ea3;
+}
+
+#location .fa {
+    margin-right: 5px;
+}
+
+#follow{
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    display: block;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto 10px;
+    background: #38b7ea;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+#guardar {
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    display: block;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto 10px;
+    background: #38b7ea;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+.article-block {
+    padding: 0px;
+    border-bottom: 1px solid #eceff2;
+}
+
+.article-block:before,
+.article-block:after {
+    content: "";
+    display: table;
+}
+
+.article-block:after {
+    clear: both;
+}
+
+.article-block .article-info-block {
+    width: 50%;
+    float: left;
+    padding: 20px 15px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.article-block .article-info-block span {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.article-block .article-info-block:first-child {
+    border-right: 1px solid #eceff2;
+}
+
+.social-links > table {
+    width: 100%;
+}
+.social-links > table td {
+    text-align: center;
+    font-size: 24px;
+}
+.social-links > table td a {
+    position: relative;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: #898d92;
+}
+.social-links > table td a:hover {
+    color: #565a5f;
+}
+.social-links > table td a.tooltip:hover:after {
+    right: -50%;
+    top: -41px;
+    color: #fff;
+    background: #333;
+    font-size: 14px;
+    content: attr(title);
+    display: block;
+    padding: 5px 15px;
+    position: absolute;
+    white-space: nowrap;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.social-links > table td a.tooltip:hover:before {
+    top: -12px;
+    right: 8px;
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 5px 5px 0 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+.social-links > table td a.tooltip:hover:before {
+    top: -12px;
+    right: 8px;
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 5px 5px 0 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+.social-block {
+    background-color: #272822;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eceff2;
+}
+.social-block:last-child {
+    border-bottom: none;
+}
+
+.article-banner {
+    width: 100%;
+    height: 240px;
+}
+
+.article-header {
+    padding: 20px 20px 0;
+    display: block;
+    margin-bottom: 14px;
+    font-size: 30px;
+    color: #565a5f;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+
+.article-title{
+    color: #565a5f;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 0 0;
+}
+
+.article-entry{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.article-overview{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 0 0;
+}
+
+.article-meta{
+    font-size: 14px;
+    margin: 5px 5px 10px;
+}
+
+.article-meta > div {
+    float: left;
+    margin-right: 10px;
+}

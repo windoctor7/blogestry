@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Blog Personal</title>
+    <link rel="icon" type="image/png" href="${context:images/profile.jpg}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../Index">Desarrollo ágil</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Sobre mi</a></li>
+            </ul>
+            <t:security.authenticated>
+                <ul class="nav navbar-nav">
+                    <li><a t:type="pageLink" page="admin/index">Nueva entrada</a></li>
+                </ul>
+            </t:security.authenticated>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<div class="custom-container container">
+    <div class="col-md-3">
+        <div class="block">
+            <div class="profile-block">
+                <img id="avatar" src="${context:images/rsz_profile.jpg}" />
+                <span id="name">${datos.autor}</span>
+                <span id="title">${datos.perfil}</span>
+                <span id="location"><i class="fa fa-map-marker"></i>${datos.ubicacion}</span>
+                <a id="follow" target="_blank" href="https://github.com/ppoffice/">Curriculum</a>
+            </div>
+            <div class="article-block">
+                <div class="article-info-block">
+                    13 <span>posts</span>
+                </div>
+                <div class="article-info-block">
+                    3
+                    <span>tags</span>
+                </div>
+            </div>
+            <div class="social-block">
+                <div class="social-links">
+                    <table>
+                        <tbody><tr>
+                            <td>
+                                <a href="${datos.github}" target="_blank" title="github">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="${datos.twitter}" target="_blank" title="twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </td>
+
+                            <td>
+                                <a href="${datos.youtube}" target="_blank" title="facebook">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <t:body></t:body>
+</div>
+<!-- /.container -->
+</body>
+</html>

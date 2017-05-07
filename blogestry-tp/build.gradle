@@ -1,0 +1,44 @@
+description = "blogestry-tp application"
+
+apply plugin: "war"
+apply plugin: "groovy"
+apply plugin: "jetty"
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+group = "io.windoctor7.github"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    // For access to Apache Staging (Preview) packages
+    maven {
+        name "Apache Staging"
+        url "https://repository.apache.org/content/groups/staging"
+    }
+}
+
+dependencies {
+
+    compile "org.apache.tapestry:tapestry-core:5.4.3"
+    compile "org.apache.tapestry:tapestry-webresources:5.4.3"
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+    compile 'org.springframework:spring-web:4.3.8.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.8.1'
+    compile 'com.atlassian.commonmark:commonmark:0.9.0'
+    compile ('org.tynamo:tapestry-security:0.6.6') {
+        exclude group:'org.apache.shiro', module:'shiro-web'
+    }
+    //al momento de crear el proyecto no esta disponible la version 1.2.5 de shiro
+    // por ello se excluye e incluye la version 1.3
+    compile 'org.apache.shiro:shiro-web:1.3.0'
+
+
+    testCompile "org.apache.tapestry:tapestry-test:5.4.3"
+    runtime "ch.qos.logback:logback-classic:1.0.13"
+}
+
+

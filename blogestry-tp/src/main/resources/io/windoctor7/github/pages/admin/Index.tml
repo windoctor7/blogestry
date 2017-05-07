@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html t:type="admin" title="blogestry-tp Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+<div class="custom-container container">
+    <form t:type="form">
+        <div class="col-md-3">
+            <div class="block">
+                <div class="profile-block">
+                    <img id="avatar" src="${context:images/rsz_profile.jpg}" />
+                    <span id="name">Ascari Romo</span>
+                    <span id="title">Java Web Developer</span>
+                    <span id="location"><i class="fa fa-map-marker"></i>Ciudad de Mexico</span>
+                    <a t:type="linksubmit" t:id="guardar" id="guardar" >Guardar</a>
+                </div>
+                <div class="article-block">
+                    <div class="article-info-block">
+                        13 <span>posts</span>
+                    </div>
+                    <div class="article-info-block">
+                        3
+                        <span>tags</span>
+                    </div>
+                </div>
+                <div class="social-block">
+                    <div class="social-links">
+                        <table>
+                            <tbody><tr>
+
+                            </tr>
+                            </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="block block-form">
+                <div class="form-group">
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <input t:type="textfield" class="form-control" id="titulo" placeholder="Titulo" value="articulo?.titulo" />
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" t:id="tags" t:type="TextField" t:value="articulo?.tags" placeholder="Etiquetas"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <t:select class="form-control" model="categorias" value="categoria" validate="required"/>
+                    </div>
+                    <div class="col-md-6">
+                        <input t:type="textfield" class="form-control" id="github" placeholder="codigo en github" value="articulo?.github" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea t:type="textarea" value="articulo?.resumen" class="form-control" id="resumen" placeholder="Resumen"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="text" id="markdown" t:id="markdown" t:type="textarea" value="articulo?.markdown" ></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</html>

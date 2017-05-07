@@ -1,0 +1,62 @@
+<html t:type="layout" title="blogestry-tp Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+<div class="col-md-9">
+    <div class="block">
+        <div class="article-inner">
+            <a href="#">
+                <img  src="${context:images/salt-lake.jpg}" class="article-banner" />
+            </a>
+        </div>
+        <div class="article-entry">
+            <h3 style="color: #3b5998;">${articulo.titulo}</h3>
+            <div class="article-meta">
+                <div><i class="fa fa-calendar">&nbsp;<t:output format="literal:dd-mm-yyyy" value="articulo.fecha"/></i></div>
+                <div><i class="fa fa-folder">&nbsp;${articulo.categoria}</i></div>
+                <t:if test="gitHub">
+                    <div>
+                        <i class="fa fa-github">&nbsp;
+                            <a href="${articulo.github}"> <b>Codigo disponible</b></a>
+                        </i>
+                    </div>
+                </t:if>
+                <div>
+                    <a href="${articulo.id}#disqus_thread"></a>
+                </div>
+                <t:security.authenticated>
+                    <div>
+                        <a t:type="pageLink" page="admin/index" context="articulo.id">
+                            <i class="fa fa-pencil" aria-hidden="true">&nbsp;Editar</i>
+                        </a>
+                    </div>
+                </t:security.authenticated>
+            </div>
+            <div>&nbsp;</div>
+            <hr style="margin-top: 5px" />
+            <div class="article-overview">
+                <t:outputraw value="articulo.contenido" />
+            </div>
+            <hr/>
+        </div>
+    </div>
+
+    <!-- No editar el script de disqus -->
+    <script id="dsq-count-scr" src="//ascariromo.disqus.com/count.js" async="async"></script>
+    <div class="disqus">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'ascariromo';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+   </div>
+
+</html>
