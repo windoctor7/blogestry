@@ -1,9 +1,22 @@
 # Blogestry
 
-Blogestry es una aplicación web de blogging, sencilla y simple pero bonita. El proyecto consta de 2 módulos,
+![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina2.png)
+
+Blogestry es una aplicación web de blogging, sencilla y simple pero bonita. 
+
+Está construida con las siguientes herramientas:
+
+1. Spring Boot usando Kotlin como lenguaje
+1. MongoDB como base de datos
+1. Tapestry para el front-end usando Groovy como lenguaje.
+
+El proyecto consta de 2 módulos,
 
 1. El **back-end** es un pequeño API REST en Spring Boot y Kotlin que persiste la información en una base de datos MongoDB
 1. El **front-end** se encuentra en Tapestry y Groovy.
+
+![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry_diagrama.png)
+
 
 Algunas características son:
 
@@ -31,7 +44,6 @@ Esto lanzará la aplicación web por el puerto 8080
 
 4. Accede por el navegador a la dirección [http://localhost:8080/blogestry-tp/](http://localhost:8080/blogestry-tp/)
 
-![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina2.png)
 ![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina1.png)
 ![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina3.png)
 
