@@ -21,7 +21,7 @@ El proyecto consta de 2 módulos,
 Algunas características son:
 
 * Sencillo administrador de publicaciones para publicar nuevas entradas o editar existentes, las publicaciones del blog se escriben en [Markdown](http://commonmark.org/help/) lo que lo hace realmente cómodo.
-* El resaltado de sitnaxis de código se hace mediante [PrismJS ](http://prismjs.com)
+* El resaltado de sintaxis de código se hace mediante [PrismJS ](http://prismjs.com)
 * Los comentarios no son administrados por el sitio, en su lugar se utiliza [disqus](disqus.com)
 
 Esta idea nacio con el único fin de aprender un poco más de estas herramientas.
@@ -43,6 +43,13 @@ Esto lanzará el api por el puerto 8081. En la consola deberás ver algo como es
 Esto lanzará la aplicación web por el puerto 8080
 
 4. Accede por el navegador a la dirección [http://localhost:8080/blogestry-tp/](http://localhost:8080/blogestry-tp/)
+
+5. Para publicar una nueva entrada, debes acceder al administrador,
+
+[http://localhost:8080/blogestry-tp/admin/](http://localhost:8080/blogestry-tp/admin/) los datos son:
+
+user: admin
+pwd: @dmin123
 
 ![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina1.png)
 ![Image](https://github.com/windoctor7/windoctor7.github.io/raw/master/static/img/blogestry-retina3.png)
