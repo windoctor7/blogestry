@@ -39,4 +39,12 @@ class Blog implements IBlog {
         def entity = template.getForEntity(url, Sitio.class)
         return entity.body
     }
+
+    @Override
+    Integer getCountArticulos() {
+        def url = API + "articulos/count"
+        RestTemplate template = new RestTemplate();
+        def entity = template.getForEntity(url, Integer.class)
+        return entity.body
+    }
 }

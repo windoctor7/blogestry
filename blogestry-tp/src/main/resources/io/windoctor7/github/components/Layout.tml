@@ -62,7 +62,7 @@
             </div>
             <div class="article-block">
                 <div class="article-info-block">
-                    13 <span>posts</span>
+                    ${countArticulos} <span>publicaci&oacute;n</span>
                 </div>
                 <div class="article-info-block">
                     3

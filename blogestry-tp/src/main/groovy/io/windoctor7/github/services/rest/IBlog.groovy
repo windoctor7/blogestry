@@ -11,4 +11,5 @@ interface IBlog {
     Categoria[] getCategorias()
     Categoria getCategoria(String nombre)
     Sitio getConfiguracion()
+    Integer getCountArticulos()
 }

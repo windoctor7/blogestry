@@ -21,4 +21,8 @@ class Layout {
         Sitio sitio = blog.configuracion
         return sitio
     }
+
+    Integer getCountArticulos(){
+        return blog.countArticulos
+    }
 }

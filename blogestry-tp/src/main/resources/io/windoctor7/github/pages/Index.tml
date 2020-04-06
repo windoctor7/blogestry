@@ -5,7 +5,7 @@
     <div class="block">
         <div class="article-inner">
             <a href="#">
-                <img  src="${context:images/salt-lake.jpg}" class="article-banner" />
+                <img  src="https://raw.githubusercontent.com/windoctor7/windoctor7.github.io/master/static/img/1213880.jpg" class="article-banner" />
             </a>
         </div>
         <div class="article-entry" t:type="loop" source="listaArticulos" value="articulo">

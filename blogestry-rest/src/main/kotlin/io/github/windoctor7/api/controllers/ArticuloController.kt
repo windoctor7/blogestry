@@ -50,7 +50,7 @@ class ArticuloController(val repository: ArticuloRepo, val mongo:MongoOperations
     }
 
     @GetMapping("/articulos/count")
-    fun count() = repository.count()
+    fun count() = repository.count( )
 
     // TODO Con findById de MongoRepository no obtiene nada.
     @GetMapping("/articulos/{id}")

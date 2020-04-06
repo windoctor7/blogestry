@@ -70,7 +70,8 @@ public class AppModule
         // the hidden field data stored in forms to encrypt and digitally sign client-side data.
         configuration.add(SymbolConstants.HMAC_PASSPHRASE, "change this immediately");
 
-        configuration.add("api","http://127.0.0.1:8081/");
+        // AQUI PONER LA URL DONDE ESTARAN DESPLEGADOS LOS SERVICIOS blogestry-rest
+        configuration.add("api","");
 
     }
 
